@@ -1,0 +1,24 @@
+{
+  "name": "r53-find",
+  "version": "1.0.0-beta.1",
+  "description": "Find record values across multiple Route 53 Hosted Zones",
+  "bin": "./src/index.js",
+  "author": "Carl Nordenfelt <carl@bynordenfelt.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/By-Nordenfelt-AB/r53-find.git"
+  },
+  "keywords": [
+    "Route53"
+  ],
+  "issues": {
+    "url": "https://github.com/By-Nordenfelt-AB/r53-find/issues"
+  },
+  "dependencies": {
+    "@aws-sdk/client-route-53": "3.540.0",
+    "csv-stringify": "6.4.6",
+    "log4njs": "3.1.0",
+    "yargs": "17.7.2"
+  }
+}
