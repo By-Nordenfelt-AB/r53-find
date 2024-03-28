@@ -20,7 +20,7 @@
   "dependencies": {
     "@aws-sdk/client-route-53": "3.540.0",
     "csv-stringify": "6.4.6",
-    "log4njs": "3.1.0",
+    "log4njs": "3.2.0",
     "yargs": "17.7.2"
   }
 }

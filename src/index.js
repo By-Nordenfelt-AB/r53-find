@@ -154,6 +154,8 @@ async function _printResult(matchingRecords) {
 }
 
 function _usage() {
+    log.getSettings().hideLogLevel = true;
+    log.info('');
     log.info('Usage:');
     log.info('node record-finder.js --record my-record');
     log.info('');
@@ -183,7 +185,7 @@ function _parseArgs() {
         _usage();
     }
     if (!argv.record) {
-        log.info('No record supplied');
+        log.error('No record supplied');
         _usage();
     }
     options.record = argv.record;
