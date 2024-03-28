@@ -178,7 +178,7 @@ function _parseArgs() {
         match: 'equality',
         file: null,
     };
-    log.info('argv', argv);
+
     if (argv['help']) {
         _usage();
     }
@@ -204,8 +204,6 @@ function _parseArgs() {
     if (argv['file']) {
         options.file = argv['file'];
     }
-
-    log.info('options', options);
 
     return options;
 }
