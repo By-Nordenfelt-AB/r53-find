@@ -2,7 +2,9 @@
   "name": "r53-find",
   "version": "1.0.0-beta.2",
   "description": "Find record values across multiple Route 53 Hosted Zones",
-  "bin": "./src/index.js",
+  "bin": {
+    "r53-find": "src/index.js"
+  },
   "author": "Carl Nordenfelt <carl@bynordenfelt.com>",
   "license": "MIT",
   "repository": {
