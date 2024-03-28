@@ -1,6 +1,6 @@
 {
   "name": "r53-find",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "Find record values across multiple Route 53 Hosted Zones",
   "bin": {
     "r53-find": "src/index.js"
