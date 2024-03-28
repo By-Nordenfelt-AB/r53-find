@@ -149,6 +149,7 @@ async function _printResult(matchingRecords) {
     }
 
     if (options.showCount) {
+        log.info('matchingRecords', matchingRecords);
         log.info(`Total count: ${matchingRecords.length}`);
     }
 }
@@ -157,10 +158,10 @@ function _usage() {
     log.getSettings().hideLogLevel = true;
     log.info('');
     log.info('Usage:');
-    log.info('node record-finder.js --record my-record');
+    log.info('r53-find --record "my-record"');
     log.info('');
     log.info('Arguments:');
-    log.info('record: Name of the record to search for. If type is set to regex, the record will be treated as a regex.');
+    log.info('record: Name of the record to search for. If type is set to regex, the record will be treated as a regex. Should be encapsulated in quotes');
     log.info('[match]: To match records using regex, set this to "regex". If not, records are matched using string equality');
     log.info('[format]: csv or json. json is default');
     log.info('[no-csv-headers]: Exclude csv headers');

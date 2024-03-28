@@ -17,7 +17,7 @@ route53:ListResourceRecordSets
 
 ### Usage
 ```
-r53-find --record my-record-value
+r53-find --record "my-record-value"
 >
 [
   {
@@ -35,7 +35,7 @@ r53-find --record my-record-value
 ```
 
 ### Arguments
-* `record` Name of the record to search for. If type is set to regex, the record will be treated as a regex. Required.
+* `record` Name of the record to search for. If type is set to regex, the record will be treated as a regex. Required. It is recommended to encapsulate the record in quotes, especially when using a regex.
 * `match` To match records using regex, set this to "regex". If not, records are matched using string equality
 * `file`: Specify if you want the result written to file rather than be printed on stdout. Relative to `pwd`. E.g., ../result/file.csv
 * `format` Output format. csv or json. json is default
@@ -46,7 +46,7 @@ r53-find --record my-record-value
 #### Look for any IPv4 record starting with 172 
 ```
 r53-find \
-    --record ^172(.[0-9]{1,3}){3}$ \
+    --record "^172(.[0-9]{1,3}){3}$" \
     --match regex \
     --file ./result.csv \
     --format csv \
